@@ -8,7 +8,7 @@
 namespace Getui;
 
 use Getui\Igetui\Utils\GTConfig;
-use Getui\IGeTui;
+use Getui\GeTui;
 use Getui\Igetui\Utils\ApiUrlRespectUtils;
 use Getui\Igetui\Utils\HttpManager;
 use Getui\Igetui\IGtListMessage;
@@ -20,7 +20,7 @@ use Getui\Igetui\IGtTagMessage;
  * VERSION 3.3.2.1
  */
 
-Class IGeTui
+Class GeTui
 {
     var $appkey; //第三方 标识
     var $masterSecret; //第三方 密钥
@@ -58,16 +58,16 @@ Class IGeTui
     {
         if($hosts == null || count($hosts) == 0)
         {
-            $hosts = isset(IGeTui::$appkeyUrlList[$this->appkey])?IGeTui::$appkeyUrlList[$this->appkey]:null;
+            $hosts = isset(GeTui::$appkeyUrlList[$this->appkey])?GeTui::$appkeyUrlList[$this->appkey]:null;
             if($hosts == null || count($hosts) == 0)
             {
                 $hosts = $this->getOSPushDomainUrlList($this->domainUrlList,$this->appkey);
-                IGeTui::$appkeyUrlList[$this->appkey] = $hosts;
+                GeTui::$appkeyUrlList[$this->appkey] = $hosts;
             }
         }
         else
         {
-            IGeTui::$appkeyUrlList[$this->appkey] = $hosts;
+            GeTui::$appkeyUrlList[$this->appkey] = $hosts;
         }
         $this->host = ApiUrlRespectUtils::getFastest($this->appkey, $hosts);
         return $this->host;
