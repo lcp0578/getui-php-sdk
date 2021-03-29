@@ -10,13 +10,13 @@ error_reporting(E_ALL | E_STRICT);
 require dirname(__DIR__).'/vendor/autoload.php';
 
 use Getui\IGeTui;
-use Getui\igetui\IGtTarget;
-use Getui\igetui\IGtSingleMessage;
-use Getui\igetui\IGtListMessage;
-use Getui\igetui\template\IGtNotyPopLoadTemplate;
-use Getui\igetui\template\IGtLinkTemplate;
-use Getui\igetui\template\IGtNotificationTemplate;
-use Getui\igetui\template\IGtTransmissionTemplate;
+use Getui\Igetui\IGtTarget;
+use Getui\Igetui\IGtSingleMessage;
+use Getui\Igetui\IGtListMessage;
+use Getui\Igetui\Template\IGtNotyPopLoadTemplate;
+use Getui\Igetui\Template\IGtLinkTemplate;
+use Getui\Igetui\Template\IGtNotificationTemplate;
+use Getui\Igetui\Template\IGtTransmissionTemplate;
 
 //更新时间为2014年11月11日
 //增加ClientId可自定义别名功能

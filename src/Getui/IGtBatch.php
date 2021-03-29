@@ -7,9 +7,9 @@
  */
 namespace Getui;
 
-use Getui\igetui\SingleBatchItem;
-use Getui\igetui\SingleBatchRequest;
-use Getui\igetui\utils\GTConfig;
+use Getui\Igetui\SingleBatchItem;
+use Getui\Igetui\SingleBatchRequest;
+use Getui\Igetui\Utils\GTConfig;
 
 /**
  * Created by PhpStorm.

@@ -7,14 +7,14 @@
  */
 namespace Getui;
 
-use Getui\igetui\utils\GTConfig;
+use Getui\Igetui\Utils\GTConfig;
 use Getui\IGeTui;
-use Getui\igetui\utils\ApiUrlRespectUtils;
-use Getui\igetui\utils\HttpManager;
-use Getui\igetui\IGtListMessage;
+use Getui\Igetui\Utils\ApiUrlRespectUtils;
+use Getui\Igetui\Utils\HttpManager;
+use Getui\Igetui\IGtListMessage;
 use Getui\IGtBatch;
-use Getui\igetui\utils\LangUtils;
-use Getui\igetui\IGtTagMessage;
+use Getui\Igetui\Utils\LangUtils;
+use Getui\Igetui\IGtTagMessage;
 
 /**
  * VERSION 3.3.2.1

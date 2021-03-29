@@ -9,7 +9,7 @@ ini_set("display_errors", "On");
 error_reporting(E_ALL | E_STRICT);
 require dirname(__DIR__).'/vendor/autoload.php';
 
-use Getui\igetui\utils\ApnsUtils;
+use Getui\Igetui\Utils\ApnsUtils;
 
 getPushInfoLen();
 

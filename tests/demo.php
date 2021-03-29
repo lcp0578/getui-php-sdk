@@ -10,22 +10,22 @@ error_reporting(E_ALL | E_STRICT);
 require dirname(__DIR__).'/vendor/autoload.php';
 
 use Getui\IGeTui;
-use Getui\igetui\IGtSingleMessage;
-use Getui\igetui\IGtTarget;
+use Getui\Igetui\IGtSingleMessage;
+use Getui\Igetui\IGtTarget;
 use Getui\exception\RequestException;
 
 use Getui\IGtBatch;
-use Getui\igetui\IGtListMessage;
-use Getui\igetui\IGtAppMessage;
+use Getui\Igetui\IGtListMessage;
+use Getui\Igetui\IGtAppMessage;
 
-use Getui\igetui\template\IGtNotyPopLoadTemplate;
-use Getui\igetui\template\IGtLinkTemplate;
-use Getui\igetui\template\IGtNotificationTemplate;
-use Getui\igetui\template\IGtTransmissionTemplate;
-use Getui\igetui\IGtAPNPayload;
-use Getui\igetui\DictionaryAlertMsg;
+use Getui\Igetui\Template\IGtNotyPopLoadTemplate;
+use Getui\Igetui\Template\IGtLinkTemplate;
+use Getui\Igetui\Template\IGtNotificationTemplate;
+use Getui\Igetui\Template\IGtTransmissionTemplate;
+use Getui\Igetui\IGtAPNPayload;
+use Getui\Igetui\DictionaryAlertMsg;
 
-use Getui\protobuf\type\PBInt;
+use Getui\Protobuf\Type\PBInt;
 
 //http的域名
 define('HOST','http://sdk.open.api.igexin.com/apiex.htm');
